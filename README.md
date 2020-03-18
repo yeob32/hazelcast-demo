@@ -1,5 +1,11 @@
 # hazelcast demo
 
+### Overview
+
+* Spring Boot
+* Embedded Hazelcast
+* In Memory Data Grid
+
 ### spring-boot-starter-cache
 
 > This abstraction is materialized by the *org.springframework.cache.Cache* and *org.springframework.cache.CacheManager* interfaces.
