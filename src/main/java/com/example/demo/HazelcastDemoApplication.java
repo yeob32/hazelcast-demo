@@ -34,7 +34,6 @@ public class HazelcastDemoApplication {
 
             log.info("not cached : {}", musicService.findMusic(music.getId()));
             log.info("maybe cached : {}", musicService.findMusic(music.getId()));
-
             log.info("getCacheNames {}", cacheManager.getCacheNames());
 
             musicService.delete(music.getId());
