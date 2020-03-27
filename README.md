@@ -27,6 +27,12 @@
 * Caffeine
 * Simple
 
+### Clustering
+* Multicast discovery
+* Discovery by TCP/IP
+* AWS EC2 discovery by TCP/IP
+* jclouds® for discovery
+
 -----
 참고
 
