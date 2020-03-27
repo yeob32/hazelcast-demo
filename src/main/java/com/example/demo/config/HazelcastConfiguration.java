@@ -13,7 +13,8 @@ public class HazelcastConfiguration {
     @Bean
     public Config hazelcastConfig() {
         List<String> members = new ArrayList<>();
-        members.add("127.0.0.1");
+        members.add("172.30.1.21");
+        members.add("52.15.113.122");
 
         TcpIpConfig TcpIpConfig = new TcpIpConfig()
                 .setEnabled(true)
@@ -37,8 +38,7 @@ public class HazelcastConfiguration {
         networkConfig.setPort(5701);
         networkConfig.setPortAutoIncrement(true);
         networkConfig.setJoin(new JoinConfig()
-                .setMulticastConfig(new MulticastConfig()
-                        .setEnabled(false))
+                .setMulticastConfig(new MulticastConfig().setEnabled(false))
                 .setTcpIpConfig(TcpIpConfig));
         networkConfig.setPortCount(20);
 
