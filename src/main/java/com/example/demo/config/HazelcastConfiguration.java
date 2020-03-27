@@ -13,8 +13,7 @@ public class HazelcastConfiguration {
     @Bean
     public Config hazelcastConfig() {
         List<String> members = new ArrayList<>();
-        members.add("172.30.1.21");
-        members.add("52.15.113.122");
+        members.add("127.0.0.1");
 
         TcpIpConfig TcpIpConfig = new TcpIpConfig()
                 .setEnabled(true)
