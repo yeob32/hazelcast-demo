@@ -1,4 +1,4 @@
-# hazelcast demo
+# hazelcast tutorial
 
 ### Overview
 
