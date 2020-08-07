@@ -1,9 +1,6 @@
 package com.example.demo.hazelcast;
 
 import com.hazelcast.collection.IQueue;
-import com.hazelcast.config.Config;
-import com.hazelcast.config.MapConfig;
-import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
