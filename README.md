@@ -54,6 +54,11 @@
 * Caffeine
 * Simple
 
+### Watch
+- hazelcast-spring
+- spring-data-hazelcast
+
+
 ## 참고
 
 * https://docs.hazelcast.org/docs/4.0.2/manual/html-single/index.html#rolling-member-upgrades
