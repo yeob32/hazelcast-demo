@@ -3,6 +3,7 @@ package com.example.demo;
 import com.example.demo.domain.music.Music;
 import com.example.demo.domain.music.MusicService;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,18 +14,18 @@ import org.springframework.context.annotation.Bean;
 
 @Slf4j
 @SpringBootApplication
-@AllArgsConstructor
+@RequiredArgsConstructor
 @EnableCaching
 public class HazelcastDemoApplication {
 
-    private CacheManager cacheManager;
-    private MusicService musicService;
+    private final CacheManager cacheManager;
+    private final MusicService musicService;
 
     public static void main(String[] args) {
         SpringApplication.run(HazelcastDemoApplication.class, args);
     }
 
-    @Bean
+//    @Bean
     public ApplicationRunner applicationRunner() {
         return args -> {
             log.info("getCacheNames {}", cacheManager.getCacheNames());

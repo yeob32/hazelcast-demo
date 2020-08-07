@@ -2,9 +2,30 @@
 
 ### Overview
 
-* Spring Boot
-* Embedded Hazelcast
-* In Memory Data Grid
+- Spring Boot 2.3.2.RELEASE
+- Embedded Hazelcast 4.0.2
+- In Memory Data Grid
+
+### Clustering
+- Multicast discovery
+- Discovery by TCP/IP
+- AWS EC2 discovery by TCP/IP
+- jclouds® for discovery
+
+### Data Structure
+- Map
+    - optimistic lock vs pessimistic lock
+- Queue
+    - Producer Consumer Pattern
+- Set
+- List
+- RingBuffer
+- Topic
+- Reliable Topic
+    - Slow Consumer
+    - reliable topic vs topic
+    
+### Event Listeners
 
 ### spring-boot-starter-cache
 
@@ -27,17 +48,10 @@
 * Caffeine
 * Simple
 
-### Clustering
-* Multicast discovery
-* Discovery by TCP/IP
-* AWS EC2 discovery by TCP/IP
-* jclouds® for discovery
+## 참고
 
------
-### 참고
-
+* https://docs.hazelcast.org/docs/4.0.2/manual/html-single/index.html#rolling-member-upgrades
 * https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#cache
 * https://brunch.co.kr/@springboot/56
 * https://hazelcast.com/
-* https://docs.hazelcast.org/docs/rn/index.html#4-0
 * https://octoperf.com/blog/2018/06/12/spring-boot-hazelcast-tutorial/
